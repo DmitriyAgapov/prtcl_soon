@@ -11,9 +11,9 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@mantine/core": "^8.0.0",
-    "@mantine/hooks": "^8.0.0",
-    "next": "^15.1.7",
+    "@mantine/core": "^8.2.1",
+    "@mantine/hooks": "^8.2.1",
+    "next": "15.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "tailwind-preset-mantine": "^2.1.0"
@@ -23,9 +23,9 @@
     "@types/node": "^22.13.4",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
-    "eslint": "^8.57.1",
-    "eslint-config-next": "^15.1.7",
-    "eslint-config-prettier": "^8.10.0",
+    "eslint": "^9.32.0",
+    "eslint-config-next": "^15.4.5",
+    "eslint-config-prettier": "^10.1.8",
     "postcss": "^8.5.2",
     "prettier": "^3.5.1",
     "tailwindcss": "^4.0.6",

@@ -1,4 +1,4 @@
-import { createTheme } from "@mantine/core";
+import { createTheme, rem } from "@mantine/core";
 
 const theme = createTheme({
   breakpoints: {
@@ -7,9 +7,21 @@ const theme = createTheme({
     md: "62em",
     lg: "75em",
     xl: "88em",
+    xxl: "118em",
   },
+  fontSizes: {
+    xxs: rem(14),
+    xs: rem(16),
+    sm: rem(20),
+    md: rem(24),
+    lg: rem(28),
+    xl: rem(32)
+  },
+  white: "#fff",
   colors: {
+
     brand: [
+      "#fff",
       "#e6f7ff",
       "#bae7ff",
       "#91d5ff",
@@ -22,6 +34,40 @@ const theme = createTheme({
       "#002766",
     ],
   },
+  headings: {
+    fontFamily: 'Circular Std',
+    fontWeight: "normal",
+    textWrap: "wrap",
+    sizes: {
+      h1: {
+        fontWeight: "400",
+        fontSize: "100px",
+        lineHeight: "110%"
+      },
+      h2: {
+        fontWeight: "400",
+        fontSize: "60px"
+      },
+      h3: {
+        fontWeight: "600",
+        fontSize: "32"
+      },
+      h4: {
+        fontWeight: "600",
+        fontSize: "32"
+      },
+      h5: {
+        fontWeight: "600",
+        fontSize: "32"
+      },
+      h6: {
+        fontWeight: "600",
+        fontSize: "32"
+      },
+    }
+  },
+  fontFamily: 'Circular Std',
+
 });
 
 export default theme;

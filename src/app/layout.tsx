@@ -5,7 +5,7 @@ import {
   MantineProvider,
 } from "@mantine/core";
 import theme from "./theme";
-import "./globals.css";
+import "./assets/styles/styles.css";
 
 export const metadata: Metadata = {
   title: "Next App Mantine Tailwind Template",
