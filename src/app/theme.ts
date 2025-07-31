@@ -35,7 +35,7 @@ const theme = createTheme({
     ],
   },
   headings: {
-    fontFamily: 'Circular Std',
+    fontFamily: 'Circular PRTCL',
     fontWeight: "normal",
     textWrap: "wrap",
     sizes: {
@@ -43,6 +43,7 @@ const theme = createTheme({
         fontWeight: "400",
         fontSize: "100px",
         lineHeight: "110%"
+
       },
       h2: {
         fontWeight: "400",
@@ -66,7 +67,7 @@ const theme = createTheme({
       },
     }
   },
-  fontFamily: 'Circular Std',
+  fontFamily: 'InterVariable',
 
 });
 

@@ -1,4 +1,4 @@
-import { ColorSchemesSwitcher } from "@/components/color-schemes-switcher";
+'use client'
 import {
   AppShell,
   AppShellHeader,
@@ -8,16 +8,17 @@ import {
   Title
 } from "@mantine/core";
 import { Logo } from "@/components/Icons/Icons";
-import bg from "@/app/assets/images/bg.png"
+import { useViewportSize } from "@mantine/hooks";
 export default function Home() {
+  const { height, width } = useViewportSize();
   return (
     <AppShell header={{ height: 180 }} padding="md">
       <BackgroundImage
-      src="images/bg.png"
+      src={width > 996 ? "images/bg.png" : "images/bg-mob.jpg"}
       radius="sm"
       style={{
         backgroundSize: "cover",
-        backgroundPosition: "80%"
+        backgroundPosition: "80% top"
       }}
       >
 
@@ -25,13 +26,13 @@ export default function Home() {
 
         borderBottom: 0
       }}>
-        <Flex className={"flex-col gap-5 lg:max-w-[664px] xl:max-w-[910px]"}>
+        <Flex className={"flex-col gap-5 xl:max-w-[910px]"}>
           <Group flex={1} className={'flex flex-col leading-none sm:flex-row sm:order-none order-1'}  justify={"space-between"}>
             <Text className={"leading-none"} size={"sm"} color={"white"}> Your heath protocol</Text>
-            <Text className={"hidden leading-none"} size={"sm"} color={"white"}>info@healthprtcl.com</Text></Group>
+            <Text className={"hidden lg:inline leading-none"} size={"sm"} color={"white"}>info@healthprtcl.com</Text></Group>
           <Group flex={1} className={'flex flex-col sm:flex-row leading-none'}  justify={"space-between"}>
             <Logo/>
-            <Text className={"flex-col gap-sm text-[26px] md:text-[29px] leading-none sm:max-w-[50%]"} size={"sm"} style={{
+            <Text className={"flex-col gap-sm text-[26px] md:text-[29px] leading-none lg:max-w-[50%]"} size={"sm"} style={{
             fontFamily: "var(--font-book)",
             fontSize: "29px"
           }} color={"white"}>Hyperbaric Medical Group</Text></Group>
@@ -46,7 +47,7 @@ export default function Home() {
           border: "2px white solid",
           borderRadius: "40px",
         }}>
-          <Title className={"text-[40px] sm:text-[70px]  xl:text-[100px] xs:max-w-[500px] xl:max-w-none"} order={1} style={{ color: "white", lineHeight: 1, fontWeight: "300" }}>
+          <Title className={"text-[40px] sm:text-[70px]  xl:text-[100px] xs:max-w-[500px] xl:max-w-none"} order={1} style={{ color: "white", lineHeight: 1}}>
             Every breath, clinically supported
           </Title>
           <Text className="text-white font-normal text-[14px]  sm:text-[18px]  lg:text-[26px] mt-6 xxl:mt-[60px]">
@@ -55,7 +56,6 @@ export default function Home() {
           <Title  className="mt-6 xxl:mt-[60px] sm:text-[40px] xl:text-[60px] text-[28px]" order={2} style={{
             color: "white",
             lineHeight: 1,
-            fontWeight: "300"
           }}>
             Opening Soon
           </Title>
