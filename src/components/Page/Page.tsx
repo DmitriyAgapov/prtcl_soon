@@ -2,7 +2,7 @@
 import {
   AppShell,
   AppShellHeader,
-  AppShellMain, BackgroundImage, Flex,
+  AppShellMain,  Flex,
   Group, Paper,
   Text,
   Title
@@ -31,7 +31,7 @@ export default function Home() {
           height: "100%",
           maxHeight: "100dvh",
           objectFit: 'cover',
-          objectPosition: width > 1200 ? 'center top' : 'center bottom',
+          objectPosition: width > 1200 ? 'center top' : 'center center',
         }}
       />
       {/*<BackgroundImage*/}
@@ -48,14 +48,14 @@ export default function Home() {
       }}>
         <Flex className={"flex-col gap-5 xl:max-w-[910px]"}>
           <Group flex={1} className={'flex flex-col leading-none sm:flex-row sm:order-none order-1'}  justify={"space-between"}>
-            <Text className={"leading-none"} size={"sm"} color={"white"}> Your heath protocol</Text>
-            <Text className={"hidden lg:inline leading-none"} size={"sm"} color={"white"}>info@healthprtcl.com</Text></Group>
+            <Text className={"leading-none text-white"} size={"sm"} > Your heath protocol</Text>
+            <Text className={"hidden lg:inline leading-none text-white"} size={"sm"} >info@healthprtcl.com</Text></Group>
           <Group flex={1} className={'flex flex-col sm:flex-row leading-none'}  justify={"space-between"}>
             <Logo/>
-            <Text className={"flex-col gap-sm text-[26px] md:text-[29px] leading-none lg:max-w-[50%]"} size={"sm"} style={{
+            <Text className={"flex-col gap-sm text-[26px] md:text-[29px] leading-none lg:max-w-[50%]  text-white"} size={"sm"} style={{
             fontFamily: "var(--font-book)",
             fontSize: "29px"
-          }} color={"white"}>Hyperbaric Medical Group</Text></Group>
+          }} >Hyperbaric Medical Group</Text></Group>
 
         </Flex>
       </AppShellHeader>
