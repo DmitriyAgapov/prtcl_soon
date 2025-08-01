@@ -1,9 +1,13 @@
 .gradientBorder {
     position: relative;
-    padding: 40px; /* Отступы внутри рамки */
+    padding: 24px 20px; /* Отступы внутри рамки */
     background: rgba(255, 255, 255, 0.001); /* Цвет фона внутри рамки */
     backdrop-filter: blur(20px);
     border-radius: 40px; /* Закругленные углы */
+    @media screen and (min-width: 768px) {
+        padding: 30px; /* Отступы внутри рамки */
+
+    }
 }
 
 .gradientBorder::before {

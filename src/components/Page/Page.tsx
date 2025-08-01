@@ -22,9 +22,9 @@ export default function Home() {
     <AppShell header={{ height: 180 }} padding="md">
       <Image
         alt=""
-        src={width > 992 && width < 1200 ? bgtab : width > 1200 ? bg : bgmob}
+        src={width > 744 && width < 1200 ? bgtab : width > 1200 ? bg : bgmob}
         placeholder="blur"
-        quality={100}
+        quality={80}
         fill
         sizes="100vw"
         style={{
@@ -63,7 +63,7 @@ export default function Home() {
           <Title className={"text-[40px] sm:text-[70px]  xl:text-[100px] xs:max-w-[500px] xl:max-w-none"} order={1} style={{ color: "white", lineHeight: 1}}>
             Every breath, clinically supported
           </Title>
-          <Text className="text-white font-normal text-[14px]  sm:text-[18px]  lg:text-[26px] mt-6 xxl:mt-[60px]">
+          <Text className="text-white font-normal text-[13px]  sm:text-[18px]  lg:text-[26px] mt-6 xxl:mt-[60px]">
             Hyperbaric oxygen therapy that helps you heal faster and feel stronger. FDA-cleared treatments, guided by doctors, and covered by insurance.
           </Text>
           <Title  className="mt-6 xxl:mt-[60px] sm:text-[40px] xl:text-[60px] text-[28px]" order={2} style={{
