@@ -28,6 +28,8 @@ export default function Home() {
         fill
         sizes="100vw"
         style={{
+          height: "100%",
+          maxHeight: "100dvh",
           objectFit: 'cover',
           objectPosition: 'top',
         }}
