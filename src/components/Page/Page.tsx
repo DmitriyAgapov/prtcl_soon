@@ -31,7 +31,7 @@ export default function Home() {
           height: "100%",
           maxHeight: "100dvh",
           objectFit: 'cover',
-          objectPosition: 'top',
+          objectPosition: 'center bottom',
         }}
       />
       {/*<BackgroundImage*/}
